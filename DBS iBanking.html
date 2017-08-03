@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- saved from url=(0046)https://internet-banking.dbs.com.sg/IB/Welcome -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
 
 
 
@@ -6,43 +8,30 @@
 
 
 
-
-
-
-
-<html>
-<head>
-
-
-
-
-
-
-
-
-	<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-   	<META HTTP-EQUIV="Cache-Control" content="no-cache">
-   	<META HTTP-EQUIV="expires" content="0">
-   	<META HTTP-EQUIV="Content-Type" content="text/html; charset=ISO-8859-1" />
-   	<META NAME="Copyright" content="(c) Copyright  2004 DBS Bank" />
-   	<META name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
-    <META HTTP-EQUIV="X-UA-Compatible" content="IE=edge">
-    <META name="format-detection" content="telephone=no">
-
+ 
+	<meta http-equiv="PRAGMA" content="NO-CACHE">
+   	<meta http-equiv="Cache-Control" content="no-cache">
+   	<meta http-equiv="expires" content="0">
+   	
+   	<meta name="Copyright" content="(c) Copyright  2004 DBS Bank">
+   	<meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+  
 	<title>DBS iBanking</title>
-	<link rel="stylesheet" href="style/themes_login.css?version=133">
-	<link rel="stylesheet" href="style/language_login.css?version=133">
+	<link rel="stylesheet" href="./DBS iBanking_files/themes_login.css">
+	<link rel="stylesheet" href="./DBS iBanking_files/language_login.css">
+	
+	<link rel="stylesheet" href="./DBS iBanking_files/login.css">
+    
 
-	<link rel="stylesheet" href="dbs/stylesheets/css/login.css?version=133">
-
-
-	<script src="scripts/vendor/jquery-1.10.2.js?version=133"></script>
-	<script src="scripts/login.js?version=133"></script>
-<script language="javascript" src="dsss/js/EncryptionApplet.js?version=100"></script>
-
-
-    <script src="js/71d06aac4e562e3a2278bf493855202cacdacaa2/satelliteLib-e1e8c61fc2280cc6fb41b6644be1ca2dfdcf675d.js?version=133"> </script>
-
+	<script src="./DBS iBanking_files/jquery-1.10.2.js.download"></script>
+	<script src="./DBS iBanking_files/login.js.download"></script>
+<script language="javascript" src="./DBS iBanking_files/EncryptionApplet.js.download"></script>
+	    
+    
+    <script src="./DBS iBanking_files/satelliteLib-e1e8c61fc2280cc6fb41b6644be1ca2dfdcf675d.js.download"> </script>
+	
 <script language="javascript">
 var digitalData=null;
 var bannerImpressionXid_1="";
@@ -56,9 +45,9 @@ function aaBannerImpression(banner_address, offerId, id)
 {
 	if (id == '0') {
 		bannerImpressionXid_1 = banner_address+"-"+offerId;
-
+		
 		if (loadImpressionCodeExecuted == 1) {
-
+			
 			digitalData.oxsBanner.xid_1 =  bannerImpressionXid_1;
 			if (typeof _satellite === "undefined") {
 				  //_satellite is undefined
@@ -69,7 +58,7 @@ function aaBannerImpression(banner_address, offerId, id)
 		}
 	} else if (id == '1') {
 		bannerImpressionXid_2 = banner_address+"-"+offerId;
-
+		
 		if (loadImpressionCodeExecuted == 1) {
 			digitalData.oxsBanner.xid_2 =  bannerImpressionXid_2;
 			if (typeof _satellite === "undefined") {
@@ -81,7 +70,7 @@ function aaBannerImpression(banner_address, offerId, id)
 		}
 	} else if (id == '2') {
 		bannerImpressionXid_3 = banner_address+"-"+offerId;
-
+		
 		if (loadImpressionCodeExecuted == 1) {
 			digitalData.oxsBanner.xid_3 =  bannerImpressionXid_3;
 			if (typeof _satellite === "undefined") {
@@ -93,7 +82,7 @@ function aaBannerImpression(banner_address, offerId, id)
 		}
 	} else if (id == '3') {
 		bannerImpressionXid_4 = banner_address+"-"+offerId;
-
+		
 		if (loadImpressionCodeExecuted == 1) {
 			digitalData.oxsBanner.xid_4 =  bannerImpressionXid_4;
 			if (typeof _satellite === "undefined") {
@@ -105,7 +94,7 @@ function aaBannerImpression(banner_address, offerId, id)
 		}
 	} else if (id == '4') {
 		bannerImpressionXid_5 = banner_address+"-"+offerId;
-
+		
 		if (loadImpressionCodeExecuted == 1) {
 			digitalData.oxsBanner.xid_5 =  bannerImpressionXid_5;
 			if (typeof _satellite === "undefined") {
@@ -115,7 +104,7 @@ function aaBannerImpression(banner_address, offerId, id)
 			  _satellite.track("oxs-banner-tracking-impression-5");
 			}
 		}
-	}
+	} 
 }
 function aaBannerClick(banner_address, offerId, id)
 {
@@ -126,7 +115,7 @@ function aaBannerClick(banner_address, offerId, id)
 		  //alert(JSON.stringify(digitalData));
 		  _satellite.track("oxs-banner-tracking-click-1");
 		}
-
+		
 	} else if (id == '1') {
 		if (typeof _satellite === "undefined") {
 			  //_satellite is undefined
@@ -182,7 +171,7 @@ function aaCheckErr()
 	}
 }
 </script>
-
+    
 
 <script>
 $(document).ready(function(){
@@ -192,9 +181,9 @@ if($('.browser-error').is(":visible")){
 	init();
 	 window.onorientationchange = detectIPadOrientation;
             setiFrameHeight();
-
+	
 	//if ($('#ermsg').height() != null) {
-
+            
             var isIE = /*@cc_on!@*/false || !!document.documentMode;
             if (isIE) {
                 $('body').addClass('ie');
@@ -235,7 +224,7 @@ function validateResize() {
             if($(window).height() < 768 && resize==false){
                 var _currentFrame = $('iframe'),
                 _currentHeight = _currentFrame.height(),
-                _currentErrorheight =  $('.generic-error').height();
+                _currentErrorheight =  $('.generic-error').height();   
                 $('.generic-error').show();
                 if($('.generic-error').is(":visible")){
                     _currentFrame.height(_currentHeight + _currentErrorheight + 30);
@@ -248,25 +237,25 @@ function validateResize() {
             else{
                 $('.generic-error').show();
                 resize = true;
-            }
+            }         
         }
 </script>
-
-<!--[if lt IE 9]>
+	
+<!--[if lt IE 9]>  
   <style>label{display:block;} </style><![endif]-->
 
-</head>
-<body onLoad="aaCheckErr();init();">
+<script src="./DBS iBanking_files/s-code-contents-c1d8630307f01c0798b45431a67956281721571a.js.download"></script></head>
+<body onload="aaCheckErr();init();">
+	
+
+<input type="hidden" name="aaDigitalData" id="aaDigitalData" value="{page:{pageInfo:{pageName:&quot;sg:en:ib_pre:SKIN_NAME:login&quot;,language:&quot;en&quot;,hier:&quot;sg|en|ib_pre|SKIN_NAME|login&quot;,referringURL:&quot;&quot;,destinationURL:&quot;LOGIN&quot;,country:&quot;sg&quot;},category:{pageType:&quot;forms - service - non-financial&quot;,site:&quot;ib_pre&quot;,primaryCategory:&quot;SKIN_NAME&quot;,subCategory1:&quot;login&quot;,subCategory2:&quot;&quot;}},user:{segment:{customerId:&quot;&quot;,customerStatus:&quot;existing&quot;}},oxsBanner:{xid_1:&quot;&quot;,xid_2:&quot;&quot;,xid_3:&quot;&quot;,xid_4:&quot;&quot;,xid_5:&quot;&quot;}}">
+<input type="hidden" name="aaCommand" id="aaCommand" value="">
+<input type="hidden" name="aaPidPrefix" id="aaPidPrefix" value="sg-SKIN_NAME-ib_pre-login:-">
+<input type="hidden" name="aaErrorMsg" id="aaErrorMsg" value="">
+<input type="hidden" name="aaLoginErrorMsg" id="aaLoginErrorMsg" value="">
 
 
-<INPUT TYPE='hidden' NAME='aaDigitalData' ID='aaDigitalData' VALUE='{page:{pageInfo:{pageName:"sg:en:ib_pre:SKIN_NAME:login",language:"en",hier:"sg|en|ib_pre|SKIN_NAME|login",referringURL:"",destinationURL:"LOGIN",country:"sg"},category:{pageType:"forms - service - non-financial",site:"ib_pre",primaryCategory:"SKIN_NAME",subCategory1:"login",subCategory2:""}},user:{segment:{customerId:"",customerStatus:"existing"}},oxsBanner:{xid_1:"",xid_2:"",xid_3:"",xid_4:"",xid_5:""}}'>
-<INPUT TYPE='hidden' NAME='aaCommand' ID='aaCommand' VALUE=''>
-<INPUT TYPE='hidden' NAME='aaPidPrefix' ID='aaPidPrefix' VALUE='sg-SKIN_NAME-ib_pre-login:-'>
-<INPUT TYPE='hidden' NAME='aaErrorMsg' ID='aaErrorMsg' VALUE=''>
-<INPUT TYPE='hidden' NAME='aaLoginErrorMsg' ID='aaLoginErrorMsg' VALUE=''>
-
-
-<iframe src="https://www.dbs.com.sg/ibanking/login-ib-rwd/dbs/iframe.html?version=3" id="iframe1" name="iframe1" scrolling="no" frameborder="0" class="content-holder">
+<iframe src="./DBS iBanking_files/iframe.html" id="iframe1" name="iframe1" scrolling="no" frameborder="0" class="content-holder" style="height: 731px;">
 
 </iframe>
 <form class="MainForm" name="MainForm" method="post">
@@ -274,61 +263,61 @@ function validateResize() {
 	<input type="hidden" name="isSubmitClicked" value="0">
 <!--body Starts Here-->
 <div class="login-form">
-
+	
 	<div class="text-center logo">
-
-	 <img src="dbs/images/desktoplogo.png">
-
+	 
+	 <img src="./DBS iBanking_files/desktoplogo.png">
+	 
 	 </div>
-
+	 
 	<div id="browsererrormsg" style="display:none;" class="brower-detect-error">
  		For an optimal viewing experience and security, we recommend that you use the latest web browser. Click <a href="http://www.dbs.com.sg/personal/ibanking/additionalinfo/faq/technical/default.page" target="_blank">here</a> for a list of supported browsers.
-	</div>
-
-
-
+	</div>			
+	
+	
+		
 	<input style="position:absolute;top:-9999px;" id="bot_username" type="text" value="bot">
 	<input style="position:absolute;top:-9999px;" id="bot_password" type="password" value="bot">
 
-
-
+			
+         
             <div class="form-row input-layout">
                 <input tabindex="1" type="text" name="UID" id="UID" maxlength="20" placeholder="" class="left" autocomplete="off">
 						    <span class="highlight"></span>
 						    <span id="uidBar" class="bar"></span>
 						    <label>User ID</label>
             </div>
-
+            
             <div id="errormsg" style="display:none" class="error-msg">
                 <h4 id="InvalidUserId">Sorry, you have entered an invalid User ID.</h4>
             </div>
 
-
-
+		
+            
             <div class="form-row input-layout pin">
                 <input tabindex="2" onkeyup="keyUp(event)" onkeydown="return onlyNumerics(event)" type="password" maxlength="9" placeholder="" name="PIN" id="PIN" autocomplete="off" class="left">
                             <span class="highlight"></span>
 						    <span id="pinBar" class="bar"></span>
 						    <label>PIN</label>
             </div>
-
+             
             <div id="errormsg1" style="display:none" class="error-msg">
                 <h4 id="InvalidPIN">The PIN length should range from 6 to 9 digits.</h4>
             </div>
-
+            
             <div class="mTop-38">
-
-            <button class="btn btn-primary block mBot-12" onclick="javascript:setStartTimeInLocalStorage();javascript:aaLoginClick();javascript:CheckErr(document.forms['MainForm']);callNIClick('int_buttonclick', 'ib_loginbox', 'login');" title="Login" tabindex="3" type="button">Login</button>
-
-			<button class="btn btn-secondary right mBot-16" onclick="javascript:aaLinkClick('login box-','get started');javascript:submitibAPLEventForm('newIB');callNIClick('int_linkclick', 'ib_loginbox', 'register');" title="Get Started" tabindex="4" type="button">Get Started</button>
-
+            
+            <button class="btn btn-primary block mBot-12" onclick="javascript:setStartTimeInLocalStorage();javascript:aaLoginClick();javascript:CheckErr(document.forms[&#39;MainForm&#39;]);callNIClick(&#39;int_buttonclick&#39;, &#39;ib_loginbox&#39;, &#39;login&#39;);" title="Login" tabindex="3" type="button">Login</button>
+ 			
+			<button class="btn btn-secondary right mBot-16" onclick="javascript:aaLinkClick(&#39;login box-&#39;,&#39;get started&#39;);javascript:submitibAPLEventForm(&#39;newIB&#39;);callNIClick(&#39;int_linkclick&#39;, &#39;ib_loginbox&#39;, &#39;register&#39;);" title="Get Started" tabindex="4" type="button">Get Started</button>
+			
 	</div>
 			<div class="links">
                 <ul class="">
-                    <li>Forgot <a href="javascript:aaLinkClick('login box-','forgot user id');javascript:submitibAPLEventForm('PrintUID');" onclick="callNIClick('int_linkclick', 'ib_loginbox', 'forgotuserid');" title="User ID" tabindex="5">User ID</a> or <a href="javascript:aaLinkClick('login box-','pin');javascript:submitibAPLEventForm('ResetPIN');" onclick="callNIClick('int_linkclick', 'ib_loginbox', 'forgotpin');" title="PIN" tabindex="6">PIN</a></li>
-					<li><a href="javascript:aaLinkClick('login box-','faq');javascript:GetTip('https://www.dbs.com.sg/ibanking/redirect/index.html?ref=pweb-dbs-ibanking-login-faq')" onclick="callNIClick('int_linkclick', 'ib_loginbox', 'faq');" title="Frequently Asked Questions" tabindex="7">Frequently Asked Questions</a></li>
-					<li><a href="javascript:aaLinkClick('login box-','maintenance schedule');javascript:GetTip('https://www.dbs.com.sg/ibanking/redirect/index.html?ref=pweb-dbs-maintenance-schedule')" onclick="callNIClick('int_linkclick', 'ib_loginbox', 'maintenance');" title="Maintenance Schedule" tabindex="8">Maintenance Schedule</a></li>
-                    <li><a href="https://www.dbs.com.sg/ibanking/redirect/index.html?ref=pweb-dbs-security-and-you-phishing" target="_blank" onclick="aaLinkClick('login box-','security and you');callNIClick('int_linkclick', 'ib_loginbox', 'security');" title="Security &amp; You" tabindex="9">Security &amp; You</a></li>
+                    <li>Forgot <a href="javascript:aaLinkClick(&#39;login box-&#39;,&#39;forgot user id&#39;);javascript:submitibAPLEventForm(&#39;PrintUID&#39;);" onclick="callNIClick(&#39;int_linkclick&#39;, &#39;ib_loginbox&#39;, &#39;forgotuserid&#39;);" title="User ID" tabindex="5">User ID</a> or <a href="javascript:aaLinkClick(&#39;login box-&#39;,&#39;pin&#39;);javascript:submitibAPLEventForm(&#39;ResetPIN&#39;);" onclick="callNIClick(&#39;int_linkclick&#39;, &#39;ib_loginbox&#39;, &#39;forgotpin&#39;);" title="PIN" tabindex="6">PIN</a></li>
+					<li><a href="javascript:aaLinkClick(&#39;login box-&#39;,&#39;faq&#39;);javascript:GetTip(&#39;https://www.dbs.com.sg/ibanking/redirect/index.html?ref=pweb-dbs-ibanking-login-faq&#39;)" onclick="callNIClick(&#39;int_linkclick&#39;, &#39;ib_loginbox&#39;, &#39;faq&#39;);" title="Frequently Asked Questions" tabindex="7">Frequently Asked Questions</a></li>
+					<li><a href="javascript:aaLinkClick(&#39;login box-&#39;,&#39;maintenance schedule&#39;);javascript:GetTip(&#39;https://www.dbs.com.sg/ibanking/redirect/index.html?ref=pweb-dbs-maintenance-schedule&#39;)" onclick="callNIClick(&#39;int_linkclick&#39;, &#39;ib_loginbox&#39;, &#39;maintenance&#39;);" title="Maintenance Schedule" tabindex="8">Maintenance Schedule</a></li>
+                    <li><a href="https://www.dbs.com.sg/ibanking/redirect/index.html?ref=pweb-dbs-security-and-you-phishing" target="_blank" onclick="aaLinkClick(&#39;login box-&#39;,&#39;security and you&#39;);callNIClick(&#39;int_linkclick&#39;, &#39;ib_loginbox&#39;, &#39;security&#39;);" title="Security &amp; You" tabindex="9">Security &amp; You</a></li>
                 </ul>
             </div>
 
@@ -337,65 +326,65 @@ function validateResize() {
 
 <script language="JavaScript">
 	function setStartTimeInLocalStorage(){
-               try{
+               try{ 	
 		if (typeof(Storage) !== "undefined") {
     		sessionStorage.setItem("iWealthStartTimeForAWSAnalytics", new Date().getTime());
 			console.log("iWealth IB AWS Analytics: stored startTime From Login button");
-		}
+		} 
               }catch(Err){
 
-		}
+		} 
 	}
 </script>
 
-
+ 
 <!-- OXS_NI_TAGGING - Starts -->
 
 <!-- OXS_NI_TAGGING - Ends -->
 
-</form>
+</form> 
 <form name="SubmitibAPLForm" action="https://internet-banking.dbs.com.sg/ibAPL/Welcome" method="post" target="_blank">
-	<input type="hidden" name="IB_SELECTION" value=""/>
-
-
+	<input type="hidden" name="IB_SELECTION" value="">
+	
+	
 </form>
 
 
 
-	<form name="LogonEventForm" action="/IB/Welcome" method="post" target="_top">
+	<form name="LogonEventForm" action="https://internet-banking.dbs.com.sg/IB/Welcome" method="post" target="_top">
 		<input type="hidden" name="statemachineStateName" value="23e95b5b0a5b17ef00adb1d416bf0b08">
 		<input type="hidden" name="statemachineEventName" value="LogonEvent">
 		<input type="hidden" name="ENCRYPTED_PIN_BLOCK" value="">
 		<input type="hidden" name="RAW_PIN_LENGTH" value="">
 		<input type="hidden" name="RSA_KEY_INDEX" value="2">
-		<input type="hidden" name="RANDOM_NUMBER" value="08612768767869786598">
-		<input type="hidden" name="RANDOM_NUMBER_AR" value="510C7AD64F8CC8F5">
+		<input type="hidden" name="RANDOM_NUMBER" value="04403979750179151827">
+		<input type="hidden" name="RANDOM_NUMBER_AR" value="66771B8A796135FA">
 		<input type="hidden" name="CLIENT_RANDOM_NUMBER" value="">
 		<input type="hidden" name="INDEX_KEY" value="">
 		<input type="hidden" name="USER_LOGON_NAME" value="">
 		<input type="hidden" name="FROM_IB" value="TRUE">
-		<input type="hidden" name="USER_AGENT" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:52.0) Gecko/20100101 Firefox/52.0">
+		<input type="hidden" name="USER_AGENT" value="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36">
 		<!-- MR1501_OXS - Starts -->
-
-			<input type="hidden" name="PWEB_META_DATA" value="">
-
+		
+			<input type="hidden" name="PWEB_META_DATA" value="dbs:personal:default|2017-7-20 11:38:57">
+		
 		<!-- MR1501_OXS - Ends -->
-
-
-
-		<input type="hidden" name="TRACK_TOKEN" value="1501738730807510C7AD64F8CC8F5">
+		
+		
+		
+		<input type="hidden" name="TRACK_TOKEN" value="150174259878966771B8A796135FA">
 	</form>
 
 
 
 
 
-	<script language="javascript" src="js/client_javascript.js?version=133"></script>
-	<script language="javascript" src="js/client_validation.js?version=133"></script>
-	<script language="javascript" src="scripts/notification.js?version=133"></script>
-
-    <script language="javascript" src="dsss/js/pinEncryption.js"></script>
-
+	<script language="javascript" src="./DBS iBanking_files/client_javascript.js.download"></script>
+	<script language="javascript" src="./DBS iBanking_files/client_validation.js.download"></script>
+	<script language="javascript" src="./DBS iBanking_files/notification.js.download"></script>
+	
+    <script language="javascript" src="./DBS iBanking_files/pinEncryption.js.download"></script> 
+	
 	<!--[if IE]>
 	<script src="scripts/html5shiv.js"></script>
 	<![endif]-->
@@ -409,8 +398,8 @@ function validateResize() {
             if (keypressed == 13) {
                 CheckErr(document.forms['MainForm']);
             }
-        });
-
+        }); 
+	
 	function CheckErr(objForm)
 	{
 		$('.login-form').removeClass('headShake');
@@ -424,38 +413,38 @@ function validateResize() {
 				bValid = true;
 				$('#UID').removeClass('red');
                 $('.login-form').removeClass('headShake');
-
+                
 		   }
 		   else
 		   {
 				// var errmsg="Sorry, you have entered an invalid User ID.";
 				// document.getElementById("InvalidUserId").innerHTML = errmsg;
-				document.getElementById("errormsg").style.display = 'none';
+				document.getElementById("errormsg").style.display = 'none'; 
 				document.getElementById("InvalidPIN").style.display = 'none';
 				if (document.getElementById("ermsg") != null) {
 					document.getElementById("ermsg").style.display = 'none';
-
+					
 					 $('#UID').removeClass('red');
                      $('.login-form').removeClass('headShake');
 				}
-
+				
 				document.getElementById("InvalidUserId").style.display = 'block';
-
+				
                     $('#UID').focus();
                     $('#UID').addClass('red');
                     $('.login-form').addClass('headShake');
-
-				document.getElementById("errormsg").style.display = 'block';
+               
+				document.getElementById("errormsg").style.display = 'block'; 
 				bValid = false;
 				aaLoginError();
 		   }
-	/*
+	/*		
 		//to change iframe width
-		  if(document.getElementById("errormsg").style.display == 'block' ||
+		  if(document.getElementById("errormsg").style.display == 'block' || 
 					document.getElementById('browsererrormsg').style.display == 'block'){
 					setiFrameHeight();
 			}
-	*/
+	*/			
 		   if (bValid)
 		   {
 			  document.LogonEventForm.elements["USER_LOGON_NAME"].value = userId;
@@ -471,30 +460,30 @@ function validateResize() {
 			return;
 		}
 	}
-
+	
 	function handleLogin() {
-
+	
 		var pinNumber = document.MainForm.PIN.value;
 		var errmsg1;
 		if (!isPinValid(pinNumber)) {
 			// errmsg1="The PIN length should range from 6 to 9 digits.";
 			// document.getElementById("InvalidPIN").innerHTML = errmsg1;
 			document.getElementById("errormsg1").style.display = 'none';
-			//document.getElementById("errormsg").style.display = 'none';
+			//document.getElementById("errormsg").style.display = 'none'; 
 			document.getElementById("InvalidUserId").style.display = 'none';
 			if (document.getElementById("ermsg") != null) {
 				document.getElementById("ermsg").style.display = 'none';
 				 $('#PIN').removeClass('red');
                  $('.login-form').removeClass('headShake');
-
+				 
 			}
 			document.getElementById("InvalidPIN").style.display = 'block';
-
+			
                 $('#PIN').focus();
                 $('#PIN').addClass('red');
                 $('.login-form').addClass('headShake');
-
-			document.getElementById("errormsg1").style.display = 'block';
+             
+			document.getElementById("errormsg1").style.display = 'block'; 
 			document.MainForm.PIN.value = "";
 			document.MainForm.PIN.focus();
 			validateResize();
@@ -513,35 +502,35 @@ function validateResize() {
                 $('#PIN').focus();
                 $('#PIN').addClass('red');
                 $('#.login-form').addClass('headShake');
-
-			document.getElementById("errormsg1").style.display = 'block';
+               
+			document.getElementById("errormsg1").style.display = 'block'; 
 			document.getElementById("InvalidPIN").style.display = 'block';
 			document.MainForm.PIN.value = "";
 			document.MainForm.PIN.focus();
 			aaLoginError();
 				return;
 		}
-
+		
 			var Exp_String="010001";
-			var publicKeyMod = 'ab271920e32597bde8bb24ed6e5bba26e103adbd64be0d3bd1510e332cdf9f3e4bc9524fe46c1a4c16b6b7e0672339d35733a3e3e046920291703b76b5f56680fb86ab66644045dc7547977380ceaffe04ba9e65f39814a2782b27aa81e603a04edc4a89dbb62c32a602512794ab3fc68dc3dac0caa9b70b87dbc1efb6b3dd390af00f2aad94d1fde73b0ed5700140b85465b812a97349b674dbfa0ce398abf87f00422e776a3ac87001dbd4ed295685925e75117b014f955740aac420906eed8c446de2709f32a951c4ba41562447aa0c19506e02e9dd7e00437abded90df1debad2638a8a4e860c7b66e555a533156377a96e02ca752c7428e51886be465bf';
-			var keyIndex = '0003';
-			var randomNumber = '510C7AD64F8CC8F5';
+			var publicKeyMod = 'c1fdb27eb6f82dfd4ca6c9dff9e3c3ef58f37d4eae918faa6ba3179d46c5f7b3e8d22e6ac29c76698a22371c472265bf9737c65a2feca224422a88fdccfaa0a3700554898f7e2cbfa9a7b20c79bed68722fd5b515b8fb22166a1e972383b42b197cce6cbbde709609ed35b894c54813fd1a4bb50a3679970e79871f41a7b3e2031cc49cea8722edae56df011331188fe634d7eef07403fcc36a92750cf9d59a1de98b852abeb8e292c2c25be45db28105a3192e1e42fd4cd4184c0c51005039b9be21f1aa32bda5d901c1495d210c686a8e13f4bd81bcc1e2e7cb778f1e2d2408c86cfd3c4895d70983dec83da71900c3584c07a28b4e28746d82032f9ee3e23'; 
+			var keyIndex = '0014'; 
+			var randomNumber = '66771B8A796135FA';
 			var encResult,encyPass,encodPara;
-
+		
 			initialisePublicKeyData(publicKeyMod,Exp_String);
-			encResult=OBM_EncryptPassword_Ex(pinNumber,randomNumber,"SHA2-512");
+			encResult=OBM_EncryptPassword_Ex(pinNumber,randomNumber,"SHA2-512"); 
 			if(encResult == "0" ){
 				encyPass= OBM_GetEncryptedPassword();
 				encodPara=OBM_GetEncodingParameter();
 		 	}
-
+	 	
 			document.LogonEventForm.ENCRYPTED_PIN_BLOCK.value =encyPass;
 			document.LogonEventForm.CLIENT_RANDOM_NUMBER.value =encodPara;
 			document.LogonEventForm.RAW_PIN_LENGTH.value = document.MainForm.PIN.value.length;
 			document.MainForm.isSubmitClicked.value = "1";
 			document.LogonEventForm.INDEX_KEY.value =keyIndex;
 			document.LogonEventForm.submit();
-
+		 
 	}
 	function doClear()
 	{
@@ -550,7 +539,7 @@ function validateResize() {
 		window.focus();
 		document.MainForm.UID.focus();
 	}
-
+	
 	function main()
 	{
 		if (document.MainForm.isCancelClicked.value == "0" && document.MainForm.isSubmitClicked.value == "0"){
@@ -564,7 +553,7 @@ function validateResize() {
 		}
 	}
 </script>
-
+	
 <script language="JavaScript">
 function submitibAPLEventForm(sel){
 	if ( sel == "ResetPIN"){
@@ -586,11 +575,11 @@ function submitibAPLEventForm(sel){
 	if (document.getElementById("aaDigitalData")) {
 		if(document.getElementById("aaDigitalData").value!=null && document.getElementById("aaDigitalData").value!="") {
 			digitalData = eval('('+document.getElementById("aaDigitalData").value+')');
-
+			
 			if (digitalData.user.segment.customerId == '') {
 				digitalData.user.segment.customerId='';
 			}
-
+			
 			var aaPageName = "";
 			var aaHier = "";
 			var aaPrimaryCategory = "";
@@ -600,16 +589,16 @@ function submitibAPLEventForm(sel){
 			  aaPageName = aaPageName.replace("SKIN_NAME", aaSkinName);
 			  digitalData.page.pageInfo.pageName = aaPageName;
 			}
-
+			
 			//brand is a new element added to pageInfo array
 			digitalData.page.pageInfo.brand = aaSkinName;
-
+			
 			if (digitalData.page.pageInfo.hier != '') {
 			  aaHier = digitalData.page.pageInfo.hier;
 			  aaHier = aaHier.replace("SKIN_NAME", aaSkinName);
 			  digitalData.page.pageInfo.hier = aaHier;
 			}
-
+			
 			if (digitalData.page.category != '') {
 				if (digitalData.page.category.primaryCategory != '') {
 				  aaPrimaryCategory = digitalData.page.category.primaryCategory;
@@ -649,7 +638,7 @@ function submitibAPLEventForm(sel){
 					}
 				}
 			}
-
+			
 			if (bannerImpressionXid_1 != null && bannerImpressionXid_1 !='') {
 				digitalData.oxsBanner.xid_1 =  bannerImpressionXid_1;
 				if (typeof _satellite === "undefined") {
@@ -696,18 +685,18 @@ function submitibAPLEventForm(sel){
 				}
 			}
 			loadImpressionCodeExecuted=1;
-
+			
 			//alert(JSON.stringify(digitalData));
 		}
 	}
-
+	
 	if (typeof _satellite === "undefined") {
 	  //_satellite is undefined
 	} else {
 	  _satellite.pageBottom();
 	}
-
-addLoadEvent(formOnLoad);
+	
+addLoadEvent(formOnLoad);	
 
 function formOnLoad() {
 	if (document.getElementById("aaCommand")) {
@@ -718,9 +707,9 @@ function formOnLoad() {
 			} else {
 			  _satellite.track(aaDigitalDataCommand);
 			}
-
+					
 		}
-	}
+	} 
 };
 
 function addLoadEvent(func) {
@@ -735,7 +724,7 @@ function addLoadEvent(func) {
       func();
     }
   }
-}
+}	
 </script>
 <script language="javascript">
 function aaButtonClick(fldName,fldId)
@@ -768,7 +757,7 @@ function aaButtonClick(fldName,fldId)
 					}
 				}
 			}
-		}
+		} 
 	}
 }
 function aaLostFocusField(fldName,fldId)
@@ -801,7 +790,7 @@ function aaLostFocusField(fldName,fldId)
 					}
 				}
 			}
-		}
+		} 
 
 	}
 }
@@ -819,7 +808,7 @@ function aaLinkClick(linkType, linkName)
 			linkType = linkType.replace(" ","");
 			linkName = linkName.replace("~","'");
 			linkName = linkName.replace("|","'");
-			var aaPid = aaPidPrefix + linkType + linkName;
+			var aaPid = aaPidPrefix + linkType + linkName; 
 			digitalData.campaign.pid = aaPid;
 			if (typeof _satellite === "undefined") {
 			  //_satellite is undefined
@@ -828,7 +817,7 @@ function aaLinkClick(linkType, linkName)
 			  _satellite.track(aaDigitalDataCommand);
 			}
 		}
-	}
+	} 
 }
 function aaLoginClick()
 {
@@ -865,43 +854,43 @@ function aa2FAelevationUsage()
 <!-- Include file pdb_iframe_init.jsp for AWS Performance Analytics-->
 
 
-	<FORM name="awspost" id="awspost" action="https://digital-analytics.com.sg/analyticsibws/rest/trackEventLogger/addTrackEventLog">
-		<INPUT TYPE='hidden' NAME='trackEventToken' ID='trackEventToken' VALUE=''>
-		<INPUT TYPE='hidden' NAME='trackEventSourceId' ID='trackEventSourceId' VALUE=''>
-		<INPUT TYPE='hidden' NAME='eventCategoryId' ID='eventCategoryId' VALUE=''>
-		<INPUT TYPE='hidden' NAME='customerLocale' ID='customerLocale' VALUE=''>
-		<INPUT TYPE='hidden' NAME='pageTitle' ID='pageTitle' VALUE=''>
-		<INPUT TYPE='hidden' NAME='serviceId' ID='serviceId' VALUE=''>
-		<INPUT TYPE='hidden' NAME='serviceName' ID='serviceName' VALUE=''>
-		<INPUT TYPE='hidden' NAME='hashId' ID='hashId' VALUE=''>
-		<INPUT TYPE='hidden' NAME='userAgent' ID='userAgent' VALUE=''>
-		<INPUT TYPE='hidden' NAME='requestSize' ID='requestSize' VALUE=''>
-		<INPUT TYPE='hidden' NAME='responseSize' ID='responseSize' VALUE=''>
-		<INPUT TYPE='hidden' NAME='startTime' ID='startTime' VALUE=''>
-		<INPUT TYPE='hidden' NAME='endTime' ID='endTime' VALUE=''>
-		<INPUT TYPE='hidden' NAME='clientTimezone' ID='clientTimezone' VALUE=''>
-		<INPUT TYPE='hidden' NAME='navigationStart' ID='navigationStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='unloadEventStart' ID='unloadEventStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='unloadEventEnd' ID='unloadEventEnd' VALUE=''>
-		<INPUT TYPE='hidden' NAME='redirectStart' ID='redirectStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='redirectEnd' ID='redirectEnd' VALUE=''>
-		<INPUT TYPE='hidden' NAME='fetchStart' ID='fetchStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='domainLookupStart' ID='domainLookupStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='domainLookupEnd' ID='domainLookupEnd' VALUE=''>
-		<INPUT TYPE='hidden' NAME='connectStart' ID='connectStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='connectEnd' ID='connectEnd' VALUE=''>
-		<INPUT TYPE='hidden' NAME='secureConnectionStart' ID='secureConnectionStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='requestStart' ID='requestStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='responseStart' ID='responseStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='responseEnd' ID='responseEnd' VALUE=''>
-		<INPUT TYPE='hidden' NAME='domLoading' ID='domLoading' VALUE=''>
-		<INPUT TYPE='hidden' NAME='domInteractive' ID='domInteractive' VALUE=''>
-		<INPUT TYPE='hidden' NAME='domContentLoadedEventStart' ID='domContentLoadedEventStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='domContentLoadedEventEnd' ID='domContentLoadedEventEnd' VALUE=''>
-		<INPUT TYPE='hidden' NAME='domComplete' ID='domComplete' VALUE=''>
-		<INPUT TYPE='hidden' NAME='loadEventStart' ID='loadEventStart' VALUE=''>
-		<INPUT TYPE='hidden' NAME='loadEventEnd' ID='loadEventEnd' VALUE=''>
-	</FORM>
+	<form name="awspost" id="awspost" action="https://digital-analytics.com.sg/analyticsibws/rest/trackEventLogger/addTrackEventLog">
+		<input type="hidden" name="trackEventToken" id="trackEventToken" value="150174259878966771B8A796135FA">
+		<input type="hidden" name="trackEventSourceId" id="trackEventSourceId" value="1">
+		<input type="hidden" name="eventCategoryId" id="eventCategoryId" value="1">
+		<input type="hidden" name="customerLocale" id="customerLocale" value="en-US">
+		<input type="hidden" name="pageTitle" id="pageTitle" value="sg:en:ib_pre:dbs:login">
+		<input type="hidden" name="serviceId" id="serviceId" value="LOGIN">
+		<input type="hidden" name="serviceName" id="serviceName" value="login">
+		<input type="hidden" name="hashId" id="hashId" value="">
+		<input type="hidden" name="userAgent" id="userAgent" value="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36">
+		<input type="hidden" name="requestSize" id="requestSize" value="0">
+		<input type="hidden" name="responseSize" id="responseSize" value="0">
+		<input type="hidden" name="startTime" id="startTime" value="1501742597964">
+		<input type="hidden" name="endTime" id="endTime" value="1501742598630">
+		<input type="hidden" name="clientTimezone" id="clientTimezone" value="+0800">
+		<input type="hidden" name="navigationStart" id="navigationStart" value="1501742597964">
+		<input type="hidden" name="unloadEventStart" id="unloadEventStart" value="1501742598099">
+		<input type="hidden" name="unloadEventEnd" id="unloadEventEnd" value="1501742598099">
+		<input type="hidden" name="redirectStart" id="redirectStart" value="0">
+		<input type="hidden" name="redirectEnd" id="redirectEnd" value="0">
+		<input type="hidden" name="fetchStart" id="fetchStart" value="1501742597965">
+		<input type="hidden" name="domainLookupStart" id="domainLookupStart" value="1501742597965">
+		<input type="hidden" name="domainLookupEnd" id="domainLookupEnd" value="1501742597965">
+		<input type="hidden" name="connectStart" id="connectStart" value="1501742597965">
+		<input type="hidden" name="connectEnd" id="connectEnd" value="1501742597965">
+		<input type="hidden" name="secureConnectionStart" id="secureConnectionStart" value="0">
+		<input type="hidden" name="requestStart" id="requestStart" value="1501742597980">
+		<input type="hidden" name="responseStart" id="responseStart" value="1501742598097">
+		<input type="hidden" name="responseEnd" id="responseEnd" value="1501742598099">
+		<input type="hidden" name="domLoading" id="domLoading" value="1501742598103">
+		<input type="hidden" name="domInteractive" id="domInteractive" value="0">
+		<input type="hidden" name="domContentLoadedEventStart" id="domContentLoadedEventStart" value="0">
+		<input type="hidden" name="domContentLoadedEventEnd" id="domContentLoadedEventEnd" value="0">
+		<input type="hidden" name="domComplete" id="domComplete" value="0">
+		<input type="hidden" name="loadEventStart" id="loadEventStart" value="0">
+		<input type="hidden" name="loadEventEnd" id="loadEventEnd" value="0">
+	</form>
 	<script language="javascript">
 
 
@@ -911,20 +900,20 @@ function aa2FAelevationUsage()
 		}
 
 		function setAwsPostData(){
-			var trackToken="1501738730807510C7AD64F8CC8F5";
+			var trackToken="150174259878966771B8A796135FA";
 
 			var now = new Date().getTime();
 			var page_load_time = now - performance.timing.navigationStart;
 			var language = navigator.userLanguage || navigator.language;
-
+	
 			var sName = "";
 			var subCategory1 = digitalData.page.category.subCategory1;
 			var subCategory2 = digitalData.page.category.subCategory2;
-
+		
 			if(null != subCategory1 && subCategory1.length != 0){
 				sName = sName + subCategory1;
 			}
-
+		
 			if(null != subCategory2 && subCategory2.length != 0){
 				sName = sName + "|" + subCategory2;
 			}
@@ -965,7 +954,7 @@ function aa2FAelevationUsage()
 			document.getElementById("loadEventStart").value = performance.timing.loadEventStart;
 			document.getElementById("loadEventEnd").value = performance.timing.loadEventEnd;
 		}
-
+		
 		try{
 			setAwsPostData();
 		}catch(Error){
@@ -974,20 +963,20 @@ function aa2FAelevationUsage()
 
 		// async ajax call to submit form
 		$.ajax({
-		   type: 'POST',
-		   url: $('#awspost').attr("action"),
+		   type: 'POST',   
+		   url: $('#awspost').attr("action"),   
 		   data: $('#awspost').serialize(),
 	 	   headers: {"Content-Type": "application/x-www-form-urlencoded"}
-		});
+		}); 
 </script>
 
 
 
  <script language="javascript">
         $('form').find("input[type=text], input[type=password], textarea").each(function (ev) {
-
+            
             //$(this).addClass("inputEmpty");
-
+            
             $('#UID').blur(function()
                 {
                     if( !$(this).val() ) {
@@ -1006,12 +995,13 @@ function aa2FAelevationUsage()
                           $(this).removeClass("red");
                     }
                 });
-
+            
         });
-
+        
     </script>
-</body>
-<HEAD>
-<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-</HEAD>
-</html>
+
+
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+
+
+</body></html>

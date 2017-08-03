@@ -1,2 +1,3 @@
 FROM nginx
-COPY DBSLogin.html /usr/share/nginx/html
+COPY * /usr/share/nginx/html
+

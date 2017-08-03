@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://www.dbs.com.sg/ibanking/login-ib-rwd/dbs/iframe.html?version=3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Copyright" content="(c) Copyright  2004 DBS Bank">
+	<meta name="format-detection" content="telephone=no">
+	<title>DBS iBanking</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./themes.css">
+    <link rel="stylesheet" href="./language.css">
+	<link href="./enhanced.css" rel="stylesheet">			
+
+	<script src="./jquery-1.10.2.js(1).download"></script>
+    <script type="text/javascript">
+	
+	//this is scheduling body text
+		window.setInterval(function() {
+
+  var current = new Date();
+  var live = new Date('Aug 7, 2017')
+
+
+  if (current.getTime() > live.getTime()) {
+    $('#body_text').hide();
+ 
+  }
+
+}, 0);
+//end body text script
+	
+$(document).ready(function() {
+  	
+	var dynamicImages = [{
+        imageclass: "Festival",
+        text: "Festival",
+    }, {
+		//Dawn
+        imageclass: "Dawn",
+        text: "Bedok Reservoir"
+    }, {
+		//Daytime 
+        imageclass: "Daytime",
+        text: "Yio Chu Kang Road"
+    }, {
+		//Noon 
+        imageclass: "Noon",
+        text: "Bishan - Ang Mo Kio Park"
+    }, {
+		//Sunset
+        imageclass: "Sunset",
+        text: "Ghim Moh"
+    },{
+		//Night
+		imageclass: "Night",
+        text: "Gardens by the Bay"
+    }];
+
+	
+	var festivalDay = false;
+    var currentDate = new Date();
+    var n = currentDate.getHours();
+	
+	
+	var festivedate = {
+		farray1: {date:new Date("July 13, 2016"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray2: {date:new Date("July 14, 2016"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray3: {date:new Date("Jun 21, 2015"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray4: {date:new Date("Jun 2, 2015"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray5: {date:new Date("Jun 22, 2015"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray6: {date:new Date("Jun 23, 2015"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray7: {date:new Date("Jun 24, 2015"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray8: {date:new Date("Jun 25, 2017"), imageclass:"hariraya", mimageclass:"mhariraya", imagetext:"Selamat Hari Raya Aidilfitri"},
+		farray9: {date:new Date("Jun 26, 2017"), imageclass:"hariraya", mimageclass:"measter16", imagetext:"Selamat Hari Raya Aidilfitri"},
+		farray10: {date:new Date("Jun 27, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray11: {date:new Date("Jun 28, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray12: {date:new Date("Jun 29, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray13: {date:new Date("Jun 30, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray14: {date:new Date("Jul 1, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray15: {date:new Date("Jul 2, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray16: {date:new Date("Jul 3, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray17: {date:new Date("Jul 4, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray18: {date:new Date("Jul 5, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray19: {date:new Date("Jul 6, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray20: {date:new Date("Jul 7, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray21: {date:new Date("Jul 8, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray22: {date:new Date("Jul 9, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray23: {date:new Date("Jul 10, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray24: {date:new Date("Jul 11, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray25: {date:new Date("Jul 12, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray26: {date:new Date("Jul 13, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray27: {date:new Date("Jul 14, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray28: {date:new Date("Jul 15, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray29: {date:new Date("Jul 16, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray30: {date:new Date("Jul 17, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray31: {date:new Date("Jul 18, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray32: {date:new Date("Jul 19, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray33: {date:new Date("Jul 20, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray34: {date:new Date("Jul 21, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray35: {date:new Date("Jul 22, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray36: {date:new Date("Jul 23, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray37: {date:new Date("Jul 24, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray38: {date:new Date("Jul 25, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray39: {date:new Date("Jul 26, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray40: {date:new Date("Jul 27, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+        farray41: {date:new Date("Jul 28, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+    	farray42: {date:new Date("Jul 29, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+	  	farray43: {date:new Date("Jul 30, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray44: {date:new Date("Jul 31, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+	  	farray45: {date:new Date("Aug 1, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray46: {date:new Date("Aug 2, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+	  	farray47: {date:new Date("Aug 3, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+  		farray48: {date:new Date("Aug 4, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+   		farray49: {date:new Date("Aug 5, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+ 		farray50: {date:new Date("Aug 6, 2017"), imageclass:"easter16", mimageclass:"measter16", imagetext:" "},
+		farray51: {date:new Date("Aug 9, 2017"), imageclass:"ndp", mimageclass:"mndp", imagetext:"Happy Birthday, Singapore"}
+	}
+	
+	jQuery.each(festivedate, function(i, val) {
+		
+    if(festivalDay != true){
+		
+        if (currentDate.setHours(0, 0, 0, 0) == val.date.setHours(0, 0, 0, 0)) {
+			
+			//alert(val.mimageclass.toString());
+			
+			$('.image').addClass(val.imageclass.toString());
+			$('.image-name').text(val.imagetext.toString());
+			
+			$('.mimage').addClass(val.mimageclass.toString());
+			
+			festivalDay = true;
+        
+		} else {
+		
+            if (n >= 5 && n < 8) {
+				$('.image').addClass(dynamicImages[1].imageclass);
+                $('.image-name').text(dynamicImages[1].text);
+            } else if (n >= 8 && n < 13) {
+                $('.image').addClass(dynamicImages[2].imageclass);
+                $('.image-name').text(dynamicImages[2].text);
+            } else if (n >= 13 && n < 17) {
+                $('.image').addClass(dynamicImages[3].imageclass);
+                $('.image-name').text(dynamicImages[3].text);
+            } else if (n >= 17 && n < 20) {
+                $('.image').addClass(dynamicImages[4].imageclass);
+                $('.image-name').text(dynamicImages[4].text);
+            } else {
+                $('.image').addClass(dynamicImages[5].imageclass);
+                $('.image-name').text(dynamicImages[5].text);           
+			}
+        }
+    }
+	
+	
+    });
+	
+	//this is scheduling body text
+		window.setInterval(function() {
+
+  var current = new Date();
+  var live = new Date('Aug 7, 2017')
+
+
+  if (current.getTime() > live.getTime()) {
+    $('#body_text').hide();
+ 
+  }
+
+}, 0);
+	
+	
+	/*--- START maintenance message dates ---------*/
+	var adhoc_msg = "<strong>Beware:</strong> There are email & phone call scams that may request you to transfer funds overseas. Do not fall for these scams. <a href='http://www.dbs.com.sg/personal/deposits/security-and-you/default.page' target='_blank'>Learn more</a>"; 
+
+var currentDatetime = new Date(); 
+var expireDatetime= new Date("Aug 31, 2016 08:00:00"); 
+
+//$("div.adhoc_message").hide(); 
+if (currentDatetime.getTime() < expireDatetime.getTime()) { 
+
+	$("div.adhoc_message table tr td").html(adhoc_msg); 
+	$("div.adhoc_message").show(); 
+
+} 
+ 
+	/*--- END maintenance message dates ---------*/
+	
+
+	
+	
+	
+    
+});
+    </script>
+
+	</head>
+	<body>
+    
+     	<!-- mobile view -->
+        <div class="mimage measter16"></div>
+        <!-- mobile view -->
+		
+      	<div class="image Noon easter16"></div>
+        
+        <!-- mobile view -->
+        <div class="mimage measter16"></div>
+        <!-- mobile view -->
+
+        
+	    <div class="gradient"></div>
+
+		<div class="header clearfix">
+        
+			<div class="adhoc_message" style="display: block;"><strong>Important notice</strong>: Please note that there will be some disruptions to DBS/POSB services over the weekend on 5 and 6 August 2017. <a href="http://www.dbs.com.sg/personal/deposits/maintenance-schedule.page?pid=sg-dbs-ib-login-textlink-anz-transfer" target="_blank">Find out more</a>.</div>
+            
+			<div class="top-links hidden-xs">
+			    <ul class="">
+			    	<li class="first">
+			    		<a href="http://www.dbs.com.sg/index/locator.page?pid=sg-dbs-ib-login-icon-locator" target="_blank">
+                            <i class="icon ico-location2"></i><span>Find Us</span>
+			    		</a>
+			    	</li>
+
+			    	<li>
+			    		<a href="http://www.dbs.com.sg/personal/support/home.html" target="_blank">
+                            <i class="icon ico-information3"></i><span>Help &amp; Support</span>
+			    		</a>
+			    	</li>
+			  </ul>
+			</div>
+            
+              <div id="body_text"><!--start body text-->
+<div class="body_text" style="width:500px;margin-top:300px; padding-left:50px;z-index:99; color:#000000;"><h2 style="font-weight:bold strong heavy; font-size:34px;"><strong>Get updated on the upcoming<br>ANZ transfer to DBS.</strong></h2>
+<strong><a style="color:#f01714; text-decoration:underline; font-weight:bold strong heavy !important;" href="http://www.dbs.com.sg/personal/landing/anz-welcome/index.html?pid=sg-dbs-ib-login-textlink-others-anz-learnmore" target="_blank">Learn more</a></strong>
+
+
+<!--<a style="color:#ffffff;" href="http://www.dbs.com.sg/personal/landing/anz-welcome/index.html?pid=sg-iwealth-ib-login-textlink-others-anz-btnlearnmore" target="_blank"><button title="Learn more" style="background-color: #f01714; border: 1px solid #ee1818; color:#ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: inline-block; padding: 0; line-height: 22px; font-weight: 500; min-width: 144px; height: 40px; text-decoration: none;padding:5px;">What's New</button></a>-->
+</div>
+</div><!--end body text-->
+            
+		</div>
+
+        <div class="clearfix"></div>
+        
+        
+         <footer class="footer global text-center">
+             
+             
+            <div class="footer-content">
+                
+          <div class="image-name mBot-32 hidden-xs hidden-sm"> </div>
+ 
+            <div class="bottom-links hidden-md hidden-lg mBot-32">
+			    <ul class="">
+			    	<li class="first">
+			    		<a href="http://www.dbs.com.sg/index/locator.page?pid=sg-dbs-ib-login-icon-locator" target="_blank">
+                            <i class="icon ico-location2"></i>
+                            <span>Find Us</span>
+			    		</a>&nbsp;
+			    	</li>
+
+			    	<li>
+			    		<a href="http://www.dbs.com.sg/personal/support/home.html" target="_blank">
+                            <i class="icon ico-information3"></i>
+                            <span>Help &amp; Support</span>
+			    		</a>
+			    	</li>
+			  </ul>
+			</div>          
+                
+                
+               <div class="footer-links clearfix">
+                  <ul class="none">
+                     <li class="first">
+                        <a href="http://www.dbs.com/terms/default.page" target="_blank" opclka="true:20:TermsConditions" ops="Forex" role="link">Terms &amp; Conditions</a><span> </span>
+                     </li>
+                     <li>
+                        <a href="http://www.dbs.com/privacy/default.page" target="_blank" opclka="true:20:PrivacyPolicy" ops="Cards" role="link">Privacy Policy</a><span> </span>
+                     </li>
+                     <li>
+                        <a href="http://www.dbs.com/fairdealing/default.page" target="_blank" opclka="true:20:FairDealing" ops="Mortgage" role="link">Fair Dealing Commitment</a><span> </span>
+                     </li>
+                     <li>
+                        <a href="http://www.dbs.com.sg/personal/compliance-tax-requirements/index.html" target="_blank" opclka="true:20:CompliancewithTaxRequirements" ops="CompliancewithTaxRequirements" role="link">Compliance with Tax Requirements</a><span> </span>
+                     </li>
+                     <li><a href="http://www.dbs.com.sg/personal/default.page?pid=sg-dbs-ib-login-txtlink-dbsbank" target="_blank">©2017 DBS Bank Ltd. Co. Reg. No. 196800306E</a></li>
+                  </ul>
+               </div>
+               <div class="footer-social-box clearfix">
+                  <ul>
+                     <li><a href="http://www.facebook.com/dbs" role="link" target="_blank"><span class="icon ico-facebook"></span></a></li>
+                     <li><a href="http://twitter.com/dbsbank" role="link" target="_blank"><span class="icon ico-twitter"></span></a></li>
+                     <li><a href="http://www.linkedin.com/company/dbs-bank" role="link" target="_blank"><span class="icon ico-linkedin"></span></a></li>
+                     <li class="mRight-0"><a href="http://www.youtube.com/user/DBS/feed" role="link" target="_blank"><span class="icon ico-youtube"></span></a></li>
+                  </ul>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+         </footer>        
+        
+	<style>
+	/*-- Festival CSS Settings --*/
+	.image.easter16{
+	background: url('images/bg-images/anz.jpg');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg-images/anz.jpg',sizingMethod='scale')";
+	}
+
+	.image.easter16  {
+	background-repeat:no-repeat;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	}
+	
+	/*-- Festival IPAD CSS Settings --*/
+	.mimage.measter16{
+	background: url('images/bg-images/anz-ipad.jpg');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg-images/anz-ipad.jpg',sizingMethod='scale')";
+	background-repeat:no-repeat;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	}
+	
+	
+	/*-- NDP SETTINGS--*/
+	
+	.image.ndp{
+	background: url('images/bg-images/ndp-2017.jpg');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg-images/ndp-2017.jpg',sizingMethod='scale')";
+	}
+
+	.image.ndp  {
+	background-repeat:no-repeat;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	}
+	
+	/*-- NDP IPAD CSS Settings --*/
+	.mimage.mndp{
+	background: url('images/bg-images/ndp-2017.jpg');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg-images/ndp-2017.jpg',sizingMethod='scale')";
+	background-repeat:no-repeat;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	}
+	</style>
+
+
+		
+	
+	</body></html>
